@@ -27,10 +27,10 @@ try:
     publicaciones = response.json()
     print("Publicaciones del usuario:")
     for pub in publicaciones:
-        print(f"- Texto: {pub.get('Text')}")
-        print(f"  Fecha: {pub.get('Datepublish')}")
+        print(f"- Text: {pub.get('Text')}")
+        print(f"  Date: {pub.get('Datepublish')}")
         print(f"  Multimedia (base64): {pub.get('Multimedia')[:30]}...")  # Part of base 64
-        print(f"  Estado: {pub.get('Status')}")
+        print(f"  Status: {pub.get('Status')}")
         print(f"  Likes: {pub.get('Likes')}")
         print()
 except Exception as e:
