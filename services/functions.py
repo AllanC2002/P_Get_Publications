@@ -11,8 +11,8 @@ def user_publications(user_id):
     }))
 
     for pub in publications:
-        pub["_id"] = str(pub["_id"]) 
+        pub["_id"] = str(pub["_id"])
         if "Datepublish" in pub:
-            pub["Datepublish"] = str(pub["Datepublish"]) 
+            pub["Datepublish"] = str(pub["Datepublish"])
 
     return publications
