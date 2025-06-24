@@ -1,12 +1,12 @@
 import requests
 
-PUBLICATIONS_URL = "http://localhost:8081/my-publications"
+PUBLICATIONS_URL = "http://3.219.144.22:8080/my-publications"
 
 login_data = {
-    "User_mail": "ascorread1",
+    "User_mail": "allan",
     "password": "1234"
 }
-login_response = requests.post("http://localhost:8080/login", json=login_data)
+login_response = requests.post("http://52.203.72.116:8080/login", json=login_data)
 
 if login_response.status_code != 200:
     print("Login failed:", login_response.status_code, login_response.text)
