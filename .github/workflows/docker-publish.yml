@@ -120,10 +120,10 @@ jobs:
                 --restart always \
                 --name project_get_publications\
                 -p 8080:8080 \
-                -e DBU_HOSTIP=${{ secrets.DBU_HOSTIP }} \
-                -e DBU_PORT=${{ secrets.DBU_PORT }} \
-                -e DBU_USER=${{ secrets.DBU_USER }} \
-                -e DBU_PASSWORD=${{ secrets.DBU_PASSWORD }} \
-                -e DBU_NAME=${{ secrets.DBU_NAME }} \
+                -e MONGO_HOSTIP=${{ secrets.MONGO_HOSTIP }} \
+                -e MONGO_PORT=${{ secrets.MONGO_PORT }} \
+                -e MONGO_USER=${{ secrets.MONGO_USER }} \
+                -e MONGO_PASSWORD=${{ secrets.MONGO_PASSWORD }} \
+                -e MONGO_DB=${{ secrets.MONGO_DB }} \
                 -e SECRET_KEY=${{ secrets.SECRET_KEY }} \
                 ${{ secrets.DOCKER_REPO }}:qa
