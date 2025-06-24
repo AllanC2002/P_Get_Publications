@@ -34,5 +34,5 @@ try:
         print(f"  Likes: {pub.get('Likes')}")
         print()
 except Exception as e:
-    print("Error al decodificar respuesta JSON:", str(e))
-    print("Respuesta cruda:", response.text)
+    print("Erroe:", str(e))
+    print("Response:", response.text)
