@@ -7,7 +7,7 @@ def user_publications(user_id):
 
     publications = list(collection.find({
         "Id_user": user_id,
-        "status": {"$ne": 0}
+        "Status": {"$ne": 0}
     }))
 
     for pub in publications:
