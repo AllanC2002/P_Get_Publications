@@ -3,10 +3,13 @@ import jwt
 import os
 from dotenv import load_dotenv
 from services.functions import user_publications
+from flask_cors import CORS
 
 load_dotenv()
 
 app = Flask(__name__)
+
+CORS(app)
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 @app.route("/my-publications", methods=["GET"])
