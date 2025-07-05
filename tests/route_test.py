@@ -25,7 +25,7 @@ print("Status:", response.status_code)
 
 try:
     publicaciones = response.json()
-    print("Publicaciones del usuario:")
+    print("Publications:")
     for pub in publicaciones:
         print(f"- Text: {pub.get('Text')}")
         print(f"  Date: {pub.get('Datepublish')}")
